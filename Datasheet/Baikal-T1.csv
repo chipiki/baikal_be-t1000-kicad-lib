@@ -104,12 +104,12 @@ W19, DDR, analog, DDR_VREF[5], right,
 J18, DDR, analog, DDR_VREFI_ZQ, right, 
 G19, DDR, output, DDR_WE#, right, inverted
 J17, DDR, analog, DDR_ZQ, right, 
-A14, JTAG, input, EJ_DINT_IN, left, 
-A13, JTAG, input, EJ_TCK, left, 
-C14, JTAG, input, EJ_TDI, left, 
-C13, JTAG, output, EJ_TDO, left, 
-B14, JTAG, input, EJ_TMS, left, 
-B13, JTAG, input, EJ_TRST_N, left, inverted
+A14, EJTAG, input, EJ_DINT_IN, left, 
+A13, EJTAG, input, EJ_TCK, left, 
+C14, EJTAG, input, EJ_TDI, left, 
+C13, EJTAG, output, EJ_TDO, left, 
+B14, EJTAG, input, EJ_TMS, left, 
+B13, EJTAG, input, EJ_TRST_N, left, inverted
 P7, RGMII, input, G0_CLK_RX_I, left, 
 P6, RGMII, output, G0_CLK_TX_I, left, 
 N6, RGMII, input, G0_GP_IN, left, 
@@ -270,11 +270,11 @@ G1, SPI, output, SPI2_SS_N[1], left, inverted
 G2, SPI, output, SPI2_SS_N[2], left, inverted
 G3, SPI, output, SPI2_SS_N[3], left, inverted
 H2, SPI, output, SPI2_TXD, left, 
-AA1, TEST, input, TCK, left, 
-AB2, TEST, input, TDI, left, 
-AB1, TEST, output, TDO, left, 
+AA1, JTAG, input, TCK, left, 
+AB2, JTAG, input, TDI, left, 
+AB1, JTAG, output, TDO, left, 
 F14, TEST, input, TEST, left, 
-AA2, TEST, input, TMS, left, 
+AA2, JTAG, input, TMS, left, 
 F13, TEST, output, TR_CLK, left, 
 A9, TEST, output, TR_DATA[0], left, 
 B9, TEST, output, TR_DATA[1], left, 
@@ -296,7 +296,7 @@ B11, TEST, output, TR_DM, left,
 E13, TEST, input, TR_PROBE_N, left, inverted
 D13, TEST, input, TR_TRIGIN, left, 
 A11, TEST, output, TR_TRIGOUT, left, 
-AA5, TEST, input, TRSTN, left, 
+AA5, JTAG, input, TRSTN, left, inverted
 U7, TEST, input, TSTSEL_1, left, 
 T7, TEST, input, TSTSEL_2, left, 
 U3, TEST, input, TSTSEL_3, left, 
